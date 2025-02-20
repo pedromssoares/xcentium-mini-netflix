@@ -45,7 +45,16 @@ npm start
 ```
 
 ## 🎥 Screenshots
-(Add images of the project here)
+
+- **Desktop Views**
+![Initial Screen Desktop](</public/screenshots/initial screen desktop.png>)
+![Screen after Search Desktop](</public/screenshots/initial screen after search desktop.png>)
+![Details Screen Desktop](</public/screenshots/details screen desktop.png>)
+
+- **Mobile Views**
+![Initial Screen Mobile](</public/screenshots/initial screen mobile.png>)
+![Screen after Search Mobile](</public/screenshots/initial screen after search mobile.png>)
+![Details Screen Mobile](</public/screenshots/details screen mobile.png>)
 
 ## 🛠 Technologies Used
 - **Next.js** - React framework for SSR and SEO
