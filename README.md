@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎬 Mini Netflix - XCentium Code Challenge
 
-## Getting Started
+A simple movie search and details app built with **Next.js**, **Tailwind CSS**, and **OMDb API**.
 
-First, run the development server:
+## 🚀 Features
+✅ **Movie Search** - Find movies dynamically using the OMDb API  
+✅ **Movie Details** - View details including title, poster, description, rating, and release date  
+✅ **Responsive UI** - Works seamlessly on desktop and mobile  
+✅ **Pagination** - Navigate through search results with next/previous buttons  
+✅ **Accessibility (A11Y)** - WCAG-compliant for screen readers and keyboard navigation  
+✅ **Optimized Performance** - Uses caching and optimized API calls  
+✅ **SEO Friendly** - Dynamic routing and semantic HTML  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📦 Installation
+Follow these steps to set up and run the project locally:
+
+### **1️⃣ Clone the repository**
+```sh
+git clone https://github.com/YOUR_GITHUB_USERNAME/mini-netflix.git
+cd mini-netflix
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **2️⃣ Install dependencies**
+```sh
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **3️⃣ Create a `.env.local` file and add your OMDb API key**
+```sh
+NEXT_PUBLIC_OMDB_API_KEY=your_api_key_here
+```
+(You can get your API key from [OMDb API](https://www.omdbapi.com/apikey.aspx))
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **4️⃣ Start the development server**
+```sh
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+### **5️⃣ Build and Run the Production Version**
+To test the production build:
+```sh
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎥 Screenshots
+(Add images of the project here)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Technologies Used
+- **Next.js** - React framework for SSR and SEO
+- **Tailwind CSS** - Utility-first styling
+- **OMDb API** - Fetching movie data
+- **TypeScript** - Type safety and better developer experience
+- **ES6+ JavaScript** - Modern coding standards
+- **Webpack (built-in)** - Bundling and optimization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏗 Folder Structure
+```
+📂 mini-netflix
+ ┣ 📂 components
+ ┃ ┣ 📜 Header.tsx
+ ┃ ┣ 📜 MovieCard.tsx
+ ┃ ┣ 📜 Pagination.tsx
+ ┃ ┣ 📜 SearchBar.tsx
+ ┃ ┗ 📜 Loading.tsx
+ ┣ 📂 pages
+ ┃ ┣ 📜 index.tsx    # Homepage (Movie Search)
+ ┃ ┣ 📜 [id].tsx     # Movie Details Page
+ ┣ 📂 styles
+ ┃ ┗ 📜 globals.css
+ ┣ 📂 utils
+ ┃ ┗ 📜 api.ts      # API Functions
+ ┣ 📜 tailwind.config.js
+ ┣ 📜 tsconfig.json
+ ┣ 📜 next.config.js
+ ┣ 📜 package.json
+ ┣ 📜 .env.local (ignored)
+ ┗ 📜 README.md
+```
 
-## Deploy on Vercel
+## ✅ Accessibility (A11Y) Improvements
+- **Screen Reader Support**: Proper `aria-live`, `role="list"`, and `alt` attributes  
+- **Keyboard Navigation**: Full support for `Tab` and `Enter` key navigation  
+- **Color Contrast**: Ensures readable text against dark backgrounds  
+- **Semantic HTML**: Uses `<main>`, `<h1>`, and proper landmarks  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠 API Usage
+The application uses **OMDb API** to fetch movie data. It makes requests using:
+- **Search movies**: `http://www.omdbapi.com/?s=movieTitle&apikey=YOUR_API_KEY`
+- **Get movie details**: `http://www.omdbapi.com/?i=movieID&apikey=YOUR_API_KEY`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 License
+This project is licensed under the **MIT License**.
